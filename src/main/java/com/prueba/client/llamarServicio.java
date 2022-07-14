@@ -13,6 +13,7 @@ public class llamarServicio  implements CommandLineRunner {
 	private static void llamarRest(){
 		RestTemplate rest=new RestTemplate();
 		System.out.println("Prueba");
+		System.out.println("Prueba 1");
 		
 		Datos datos=rest.getForObject("https://pokeapi.co/api/v2/pokemon-species",Datos.class);
 		System.out.println("Los Pokemones obtenidos son : "+datos.getResults());
